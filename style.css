@@ -488,7 +488,6 @@ input[type="email"] {
 
 @media (min-width: 30em) {
 	.slider {
-		padding-right: 50px;
 		scroll-padding-inline: 25px;
 	}
 
@@ -502,11 +501,6 @@ input[type="email"] {
 }
 
 @media (min-width: 47em) {
-	.slider {
-		padding-right: 12%;
-		scroll-padding-inline: 25px;
-	}
-
 	.slider > * {
 		width: 35%;
 	}
