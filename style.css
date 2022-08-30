@@ -184,14 +184,17 @@ p[data-width="wide"] {
 	align-items: center;
 }
 
+.logo {
+	margin-top: 5px;
+}
+
 .mobile-nav-toggle {
 	display: none;
 }
 
 .nav-list {
-	font-size: var(--fs-nav);
 	display: flex;
-	gap: var(--size-600);
+	gap: var(--size-400);
 	font-weight: var(--fw-semi-bold);
 }
 
@@ -205,7 +208,13 @@ p[data-width="wide"] {
 	color: var(--clr-accent-400);
 }
 
-@media (max-width: 47em) {
+@media (min-width: 55em) {
+	.nav-list {
+		gap: var(--size-600);
+	}
+}
+
+@media (max-width: 48em) {
 	.primary-navigation {
 		display: none;
 
@@ -273,7 +282,7 @@ p[data-width="wide"] {
 	text-align: center;
 }
 
-@media (min-width: 47em) {
+@media (min-width: 48em) {
 	.cta {
 		text-align: left;
 	}
@@ -330,7 +339,7 @@ p[data-width="wide"] {
 	text-align: center;
 }
 
-@media (min-width: 47em) {
+@media (min-width: 48em) {
 	.primary-footer__wrapper {
 		grid-template-areas:
 			"logo nav form"
@@ -343,7 +352,7 @@ p[data-width="wide"] {
 	}
 }
 
-@media (max-width: 47em) {
+@media (max-width: 48em) {
 	.primary-footer__wrapper > * {
 		margin-inline: auto;
 	}
@@ -398,7 +407,7 @@ input[type="email"] {
 	fill: var(--clr-accent-400);
 }
 
-@media (min-width: 47em) {
+@media (min-width: 48em) {
 	.social-list {
 		display: flex;
 		gap: var(--size-300);
@@ -510,7 +519,7 @@ input[type="email"] {
 	}
 }
 
-@media (min-width: 47em) {
+@media (min-width: 48em) {
 	.slider > * {
 		width: 35%;
 	}
@@ -560,7 +569,7 @@ input[type="email"] {
 
 /* Hero */
 
-@media (max-width: 47em) {
+@media (max-width: 48em) {
 	.hero__image {
 		order: -1;
 	}
@@ -581,7 +590,7 @@ input[type="email"] {
 	background-position: bottom left;
 }
 
-@media (min-width: 47em) {
+@media (min-width: 48em) {
 	.hero__image::before {
 		width: 45%;
 	}
@@ -627,7 +636,7 @@ input[type="email"] {
 	justify-self: end;
 }
 
-@media (min-width: 47em) {
+@media (min-width: 48em) {
 	.justify-self-end-md {
 		justify-self: end;
 	}
@@ -646,7 +655,7 @@ input[type="email"] {
 	margin-inline: auto;
 }
 
-@media (max-width: 47em) {
+@media (max-width: 48em) {
 	.text-center-sm-only {
 		text-align: center;
 	}
@@ -656,7 +665,7 @@ input[type="email"] {
 	}
 }
 
-@media (min-width: 47em) {
+@media (min-width: 48em) {
 	.even-columns {
 		grid-auto-flow: column;
 		grid-auto-columns: 1fr;
@@ -763,7 +772,7 @@ input[type="email"] {
 	display: none;
 }
 
-@media (min-width: 47em) {
+@media (min-width: 48em) {
 	.display-md-inline-flex {
 		display: inline-flex;
 	}
